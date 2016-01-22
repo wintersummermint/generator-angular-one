@@ -40,46 +40,48 @@ Package manager (npm) need to be installed. You can get them from http://nodejs.
 ```
 if you encountered error when 3rd party is installed library use reinstall manually bower and npm or use grunt serve --force, 
 
-## Directory Layout
+## Directory Structure
 -----------------------------------------------------------------------------------
-    /app-main ...................... Main module
-      app-main.js .................. Main module initialization and route setup
-      app-main.less................ main module LESS
-      /home ....................... angular home feature folder
-        home-controller.js ........ example simple controller
-        home-controller-spec.js.... example simple controller unit test
+    /app-main ......................... Main module
+      app-main.js ..................... Main module initialization and route setup
+      /home ........................... home feature folder
+        home-controller.js ............ example simple controller
+        home-controller-test.js........ example simple controller unit test
         
-        home-directive.js ........ complex directive javascript
-        home-directive.html ...... complex directive partial
-        home-directive.less ...... complex directive LESS
-        home-directive-spec.js ... complex directive unit test
-          /home-partial ............... example partial
+        home-directive.js ............. complex directive javascript
+        home-directive.html ........... complex directive partial
+        home-directive.less ........... complex directive LESS
+        home-directive-test.js ........ complex directive unit test
+        /home-partial ................. example partial
             home-partial.html ......... example partial html
             home-partial.js ........... example partial controller
             home-partial.less ......... example partial LESS
-            home-partial-spec.js ...... example partial unit test
-    	/search ........................ example search component folder
-      		my-filter.js ................. example filter
-      		my-filter-spec.js ............ example filter unit test
-      	/search-partial .............. example partial
-        	search-partial.html ........ example partial html
-        	search-partial.js .......... example partial controller
-        	search-partial.less ........ example partial LESS
-        	search-partial-spec.js ..... example partial unit test
-    	/service ....................... angular services folder
-        	my-service.js .............. example service
-        	my-service-spec.js ......... example service unit test
-        	my-service2.js ............. example service
-        	my-service2-spec.js ........ example service unit test
-    /assets ........................ assets (not created by default but included in /dist if added : recommended) will update this in next release
-    /dist .......................... distributable version of app built using grunt and Gruntfile.js
-    /bower_component................ 3rd party libraries managed by bower
-    /node_modules .................. npm managed libraries used by grunt
-    app.less ....................... main app-less styles
-    app.js ......................... angular module initialization and route setup
-    index.html ..................... main HTML file
-    Gruntfile.js ................... Grunt build file
+            home-partial-test.js ...... example partial unit test
+    	/search ....................... example search component folder
+      		my-filter.js .............. example filter
+      		my-filter-test.js ......... example filter unit test
+      	/search-partial ............... example partial
+        	search-partial.html ....... example partial html
+        	search-partial.js ......... example partial controller
+        	search-partial.less ....... example partial LESS
+        	search-partial-test.js .... example partial unit test
+    	/service ...................... angular services folder
+        	my-service.js ............. example service
+        	my-service-test.js ........ example service unit test
+        	my-service2.js ............ example service
+        	my-service2-test.js ....... example service unit test
+    /assets ........................... assets (not created by default but included in /dist if added : recommended) will update this in next release
+    /dist ............................. distributable version of app built using grunt and Gruntfile.js
+        /js ........................... js libraries (create this manually) 
+        /img .......................... image assets (create this manually)
+    /bower_component................... 3rd party libraries managed by bower
+    /node_modules ..................... npm managed libraries used by grunt
+    app.less .......................... main app-less styles
+    app.js ............................ angular module initialization and route setup
+    index.html ........................ main HTML file
+    Gruntfile.js ...................... Grunt build file
 
+-----------------------------------------------------------------------------------
 
 ## Running Generator:
 
@@ -102,7 +104,7 @@ Note :
 ## Submodules
 -------------
 
-Submodules allow you to more explicitly separate parts of your application.  Use the `yo angular-one:module my-module` command and specify a new subdirectory to place the module into.  Once you've created a submodule, running other subgenerators will now prompt you to select the module in which to place the new component.
+Use the `yo angular-one:module my-module` specify a new subdirectory to place the module into.  Once you've created a submodule, running other subgenerators will now prompt you to select the module in which to place the new component.
 
 ## Libraries 
 -------------
@@ -126,6 +128,7 @@ The project will include a ready-made Grunt build that will:
 * Replaces all appropriate script references in `index.html` with the minified CSS and JS files.
 * (Optionally) Minifies any images in `/img`.
 * Minifies the `index.html`.
+* adds assets to dist
 * Copies any extra files necessary for a distributable build (ex.  Font-Awesome font files, etc).
 
 The resulting build loads only a few highly compressed files.
