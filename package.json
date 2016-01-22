@@ -1,6 +1,6 @@
 {
   "name": "generator-angular-one",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Angular base scaffolding for large projects",
   "keywords": [
     "yeoman-generator",
