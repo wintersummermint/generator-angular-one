@@ -84,7 +84,7 @@ if you encountered error when 3rd party is installed library use --force,
 
 ## Running Generator:
 
-generators for `controller`, `directive`, `partial`, `service`, `filter`, `module`, and `modal`.
+generators for controller, directive, partial, service, filter, module, and modal.
 
 ```
 	yo angular-one:controller controllerName

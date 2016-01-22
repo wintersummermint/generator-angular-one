@@ -26,8 +26,8 @@ ControllerGenerator.prototype.askFor = function askFor() {
     var prompts = [{
         type:'confirm',
         name: 'needpartial',
-        message: 'Create controller?',
-        default: false
+        message: 'Create controller html?',
+        default: true
     }];
 
     angularOneUtils.addNamePrompt(this,prompts,'controller');
@@ -53,6 +53,6 @@ ControllerGenerator.prototype.files = function files() {
 
     this.htmlPath = path.join(this.dir,this.name + '.html').replace(/\\/g,'/');;
 
-    angularOneUtils.processTemplates(this.name,this.dir,'controller',this,defaultDir,configName,this.module);
+    angularOneUtils.processTemplates(this.name + '-controller' +,this.dir,'controller',this,defaultDir,configName,this.module);
 
 };
