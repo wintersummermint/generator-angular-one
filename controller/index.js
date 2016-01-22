@@ -26,8 +26,8 @@ ControllerGenerator.prototype.askFor = function askFor() {
     var prompts = [{
         type:'confirm',
         name: 'needpartial',
-        message: 'Create html view for this controller (e.g: feature.html)?',
-        default: true
+        message: 'Create controller?',
+        default: false
     }];
 
     angularOneUtils.addNamePrompt(this,prompts,'controller');
