@@ -22,7 +22,7 @@ Package manager (npm) need to be installed. You can get them from http://nodejs.
 
     npm install -g yo grunt-cli bower
 
-### Install this Generator:
+### Install this Generator using global -g:
 ------------------------------------------------------------------------------------
     npm install -g angular-one
 
