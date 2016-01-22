@@ -18,16 +18,16 @@ Generator
 
 Package manager (npm) need to be installed. You can get them from http://nodejs.org/.
 
-Install Prerequisites: Node, Grunt, Yeoman, and Bower.  Once Node is installed, do:
+### Install Prerequisites: Node, Grunt, Yeoman, and Bower.  Once Node is installed, do:
 ------------------------------------------------------------------------------------
 
     npm install -g yo grunt-cli bower
 
-Install this Generator:
+### Install this Generator:
 ------------------------------------------------------------------------------------
     npm install -g angular-one
 
-Finally Create project:
+### Finally Create project:
 ------------------------------------------------------------------------------------
     mkdir myNewproject
     cd myNewproject
