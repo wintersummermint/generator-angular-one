@@ -72,7 +72,7 @@ if you encountered error when 3rd party is installed library use reinstall manua
         my-service-spec.js ......... example service unit test
         my-service2.js ............. example service
         my-service2-spec.js ........ example service unit test
-    /assets ........................... assets (not created by default but included in /dist if added)
+    /assets ........................ assets (not created by default but included in /dist if added : recommended) will update this in next release
     /dist .......................... distributable version of app built using grunt and Gruntfile.js
     /bower_component................ 3rd party libraries managed by bower
     /node_modules .................. npm managed libraries used by grunt
