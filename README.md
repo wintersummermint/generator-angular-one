@@ -4,9 +4,8 @@
 Yeoman angular scaffolding for large projects
 
 
-
 This follows practice with [Best Practice angular-styleguide/johnpapa](https://github.com/johnpapa/angular-styleguide).
-Quickly bootstrap angular projects and dev environment with the help of angular One. 
+Quickly bootstrap angular projects and dev environment with the help of angular One. This is still in working progress for additional features.
 
 Generator 
 - Bootstrap skeleton files (javascript, LESS, html, spec etc) for the component type.
@@ -112,7 +111,12 @@ Includes Angular 1.3, Bootstrap 3, AngularUI Bootstrap, AngularUI Utils, FontAwe
 
 ## Build Process
 -------------
+```
 
+    grunt test //karmajs testing
+    grunt build //dist folder
+    
+```
 The project will include a ready-made Grunt build that will:
 
 * Build all the LESS files into one minified CSS file.
