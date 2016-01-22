@@ -53,6 +53,6 @@ ControllerGenerator.prototype.files = function files() {
 
     this.htmlPath = path.join(this.dir,this.name + '.html').replace(/\\/g,'/');;
 
-    angularOneUtils.processTemplates(this.name + '-controller' +,this.dir,'controller',this,defaultDir,configName,this.module);
+    angularOneUtils.processTemplates(this.name + '-controller',this.dir,'controller',this,defaultDir,configName,this.module);
 
 };
