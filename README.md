@@ -45,10 +45,10 @@ if you encountered error when 3rd party is installed library use reinstall manua
 -----------------------------------------------------------------------------------
     /app-main ...................... Main module
       app-main.js .................. Main module initialization and route setup
-      app-main.less ................... main module LESS
-      /home-controller ............ angular controller folder
-        main-controller.js ........ example simple controller
-        main-controller-spec.js.... example simple controller unit test
+      app-main.less................ main module LESS
+      /home ....................... angular home feature folder
+        home-controller.js ........ example simple controller
+        home-controller-spec.js.... example simple controller unit test
         
         home-directive.js ........ complex directive javascript
         home-directive.html ...... complex directive partial
@@ -59,19 +59,19 @@ if you encountered error when 3rd party is installed library use reinstall manua
             home-partial.js ........... example partial controller
             home-partial.less ......... example partial LESS
             home-partial-spec.js ...... example partial unit test
-    /search ........................ example search component folder
-      my-filter.js ................. example filter
-      my-filter-spec.js ............ example filter unit test
-      /search-partial .............. example partial
-        search-partial.html ........ example partial html
-        search-partial.js .......... example partial controller
-        search-partial.less ........ example partial LESS
-        search-partial-spec.js ..... example partial unit test
-    /service ....................... angular services folder
-        my-service.js .............. example service
-        my-service-spec.js ......... example service unit test
-        my-service2.js ............. example service
-        my-service2-spec.js ........ example service unit test
+    	/search ........................ example search component folder
+      		my-filter.js ................. example filter
+      		my-filter-spec.js ............ example filter unit test
+      	/search-partial .............. example partial
+        	search-partial.html ........ example partial html
+        	search-partial.js .......... example partial controller
+        	search-partial.less ........ example partial LESS
+        	search-partial-spec.js ..... example partial unit test
+    	/service ....................... angular services folder
+        	my-service.js .............. example service
+        	my-service-spec.js ......... example service unit test
+        	my-service2.js ............. example service
+        	my-service2-spec.js ........ example service unit test
     /assets ........................ assets (not created by default but included in /dist if added : recommended) will update this in next release
     /dist .......................... distributable version of app built using grunt and Gruntfile.js
     /bower_component................ 3rd party libraries managed by bower
