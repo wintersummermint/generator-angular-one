@@ -23,12 +23,12 @@ util.inherits(ControllerGenerator, yeoman.generators.Base);
 ControllerGenerator.prototype.askFor = function askFor() {
     var cb = this.async();
 
-    // var prompts = [{
-    //     type:'confirm',
-    //     name: 'needpartial',
-    //     message: 'Create controller html?',
-    //     default: true
-    // }];
+    var prompts = [{
+        type:'confirm',
+        name: 'needpartial',
+        message: 'Create html for this controller?',
+        default: true
+    }];
 
     angularOneUtils.addNamePrompt(this,prompts,'controller');
 
