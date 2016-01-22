@@ -3,6 +3,8 @@
 
 Yeoman angular scaffolding for large projects
 
+
+
 This follows practice with [Best Practice angular-styleguide/johnpapa](https://github.com/johnpapa/angular-styleguide).
 Quickly bootstrap angular projects and dev environment with the help of angular One. 
 
@@ -33,18 +35,14 @@ Finally Create project:
 
 ## Run Application 
 ```
+
     grunt serve 
     
 ```
 if you encountered error when 3rd party is installed library use --force, 
 
 ## Directory Layout
--------------
-
-    app.less ....................... main app-less styles
-    app.js ......................... angular module initialization and route setup
-    index.html ..................... main HTML file
-    Gruntfile.js ................... Grunt build file
+-----------------------------------------------------------------------------------
     /app-main ...................... Main module
       app-main.js .................. Main module initialization and route setup
       app-main.less ................... main module LESS
@@ -78,12 +76,16 @@ if you encountered error when 3rd party is installed library use --force,
     /dist .......................... distributable version of app built using grunt and Gruntfile.js
     /bower_component................ 3rd party libraries managed by bower
     /node_modules .................. npm managed libraries used by grunt
-
+    app.less ....................... main app-less styles
+    app.js ......................... angular module initialization and route setup
+    index.html ..................... main HTML file
+    Gruntfile.js ................... Grunt build file
 
 
 ## Running Generator:
 
-generators for `controller`,directive`,`partial`,`service`, `filter`, `module`, and `modal`.
+generators for `controller`, `directive`, `partial`, `service`, `filter`, `module`, and `modal`.
+
 ```
 	yo angular-one:controller controllerName
     yo angular-one:directive directiveName
@@ -92,6 +94,7 @@ generators for `controller`,directive`,`partial`,`service`, `filter`, `module`, 
     yo angular-one:filter filterName
     yo angular-one:module moduleName
     yo angular-one:modal modalName
+
 ```
 Note : 
 	Name paramater passed will be used as the file names.  Each sub-generator will ask for the folder in which to create the new skeleton files.  You may override the default folder for each sub-generator in the `.yo-rc.json` file.
