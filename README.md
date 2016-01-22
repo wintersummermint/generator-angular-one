@@ -39,7 +39,7 @@ Package manager (npm) need to be installed. You can get them from http://nodejs.
     grunt serve 
     
 ```
-if you encountered error when 3rd party is installed library use --force, 
+if you encountered error when 3rd party is installed library use reinstall manually bower and npm or use grunt serve --force, 
 
 ## Directory Layout
 -----------------------------------------------------------------------------------
@@ -88,12 +88,12 @@ generators for controller, directive, partial, service, filter, module, and moda
 
 ```
 	yo angular-one:controller controllerName
-    yo angular-one:directive directiveName
-    yo angular-one:partial partialName
-    yo angular-one:service serviceName
-    yo angular-one:filter filterName
-    yo angular-one:module moduleName
-    yo angular-one:modal modalName
+	yo angular-one:directive directiveName
+	yo angular-one:partial partialName
+	yo angular-one:service serviceName
+	yo angular-one:filter filterName
+	yo angular-one:module moduleName
+	yo angular-one:modal modalName
 
 ```
 Note : 
