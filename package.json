@@ -1,0 +1,42 @@
+{
+  "name": "generator-angular-one",
+  "version": "1.1.1",
+  "description": "Angular base scaffolding for large projects",
+  "keywords": [
+    "yeoman-generator",
+    "angular"
+  ],
+  "homepage": "https://github.com/wintersummermint/angular-one.git",
+  "bugs": "https://github.com/wintersummermint/angular-one/issues",
+  "author": {
+    "name": "Nixon Galario",
+    "email": "nixongalaio@gmail.com",
+    "url": "https://github.com/wintersummermint"
+  },
+  "main": "app/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wintersummermint/angular-one.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "underscore": "~1.5",
+    "underscore.string": "~2.3",
+    "yeoman-generator": "~0.16",
+    "chalk": "~0.4.0",
+    "ng-parse-module": "~0.1.0"
+  },
+  "devDependencies": {
+    "mocha": "~1.10.0"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ]
+}
