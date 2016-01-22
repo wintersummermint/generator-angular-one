@@ -39,6 +39,6 @@ FilterGenerator.prototype.askFor = function askFor() {
 
 FilterGenerator.prototype.files = function files() {
 
-    angularOneUtils.processTemplates(this.name,this.dir,'filter',this,null,null,this.module);
+    angularOneUtils.processTemplates(this.name + '-filter',this.dir,'filter',this,null,null,this.module);
 
 };

@@ -26,7 +26,7 @@ ControllerGenerator.prototype.askFor = function askFor() {
     var prompts = [{
         type:'confirm',
         name: 'needpartial',
-        message: 'Create html for this controller?',
+        message: 'Create this controller?',
         default: true
     }];
 

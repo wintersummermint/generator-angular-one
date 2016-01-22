@@ -36,9 +36,9 @@ ModalGenerator.prototype.askFor = function askFor() {
 
 ModalGenerator.prototype.files = function files() {
 
-    this.ctrlname = _.camelize(_.classify(this.name)) + 'Ctrl';
+    this.ctrlname = _.camelize(_.classify(this.name)) + 'controller';
 
-    angularOneUtils.processTemplates(this.name,this.dir,'modal',this,null,null,this.module);
+    angularOneUtils.processTemplates(this.name + '-modal',this.dir,'modal',this,null,null,this.module);
 
     setTimeout((function(){
 
