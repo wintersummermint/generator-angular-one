@@ -49,16 +49,16 @@ if you encountered error when 3rd party is installed library use reinstall manua
       /home-controller ............ angular controller folder
         main-controller.js ........ example simple controller
         main-controller-spec.js.... example simple controller unit test
-      /main-directive ............ example directive
-        main-directive.js ........ complex directive javascript
-        main-directive.html ...... complex directive partial
-        main-directive.less ...... complex directive LESS
-        main-directive-spec.js ... complex directive unit test
-      /main-partial ............... example partial
-        main-partial.html ......... example partial html
-        main-partial.js ........... example partial controller
-        main-partial.less ......... example partial LESS
-        main-partial-spec.js ...... example partial unit test
+        
+        home-directive.js ........ complex directive javascript
+        home-directive.html ...... complex directive partial
+        home-directive.less ...... complex directive LESS
+        home-directive-spec.js ... complex directive unit test
+          /home-partial ............... example partial
+            home-partial.html ......... example partial html
+            home-partial.js ........... example partial controller
+            home-partial.less ......... example partial LESS
+            home-partial-spec.js ...... example partial unit test
     /search ........................ example search component folder
       my-filter.js ................. example filter
       my-filter-spec.js ............ example filter unit test
