@@ -43,7 +43,7 @@ if you encountered error when 3rd party is installed library use reinstall manua
 ## Directory Structure
 -----------------------------------------------------------------------------------
     /app-main ......................... Main module
-      app-main.js ..................... Main module initialization and route setup
+      app-main-controller.js .......... app main js controller
       /home ........................... home feature folder
         home-controller.js ............ example simple controller
         home-controller-test.js........ example simple controller unit test
