@@ -1,0 +1,105 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/bin/npm', 'publish' ]
+2 info using npm@3.5.3
+3 info using node@v0.12.9
+4 verbose node symlink /usr/bin/node
+5 verbose publish [ '.' ]
+6 silly cache add args [ '.', null ]
+7 verbose cache add spec .
+8 silly cache add parsed spec { raw: '.',
+8 silly cache add   scope: null,
+8 silly cache add   name: null,
+8 silly cache add   rawSpec: '.',
+8 silly cache add   spec: '/home/cypher/Videos/generator-angular-one',
+8 silly cache add   type: 'directory' }
+9 verbose addLocalDirectory /home/cypher/.npm/generator-angular-one/1.4.1/package.tgz not in flight; packing
+10 info lifecycle generator-angular-one@1.4.1~prepublish: generator-angular-one@1.4.1
+11 silly lifecycle generator-angular-one@1.4.1~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/home/cypher/.npm/generator-angular-one/1.4.1/package.tgz',
+12 verbose tar pack   '/home/cypher/Videos/generator-angular-one' ]
+13 verbose tarball /home/cypher/.npm/generator-angular-one/1.4.1/package.tgz
+14 verbose folder /home/cypher/Videos/generator-angular-one
+15 verbose addLocalTarball adding from inside cache /home/cypher/.npm/generator-angular-one/1.4.1/package.tgz
+16 silly cache afterAdd generator-angular-one@1.4.1
+17 verbose afterAdd /home/cypher/.npm/generator-angular-one/1.4.1/package/package.json not in flight; writing
+18 verbose afterAdd /home/cypher/.npm/generator-angular-one/1.4.1/package/package.json written
+19 silly publish { name: 'generator-angular-one',
+19 silly publish   version: '1.4.1',
+19 silly publish   description: 'Angular base scaffolding for large projects',
+19 silly publish   keywords: [ 'yeoman-generator', 'angular' ],
+19 silly publish   homepage: 'https://github.com/wintersummermint/generator-angular-one.git',
+19 silly publish   bugs: { url: 'https://github.com/wintersummermint/generator-angular-one/issues' },
+19 silly publish   author:
+19 silly publish    { name: 'Nixon Galario',
+19 silly publish      email: 'nixongalaio@gmail.com',
+19 silly publish      url: 'https://github.com/wintersummermint' },
+19 silly publish   main: 'app/index.js',
+19 silly publish   repository:
+19 silly publish    { type: 'git',
+19 silly publish      url: 'git+https://github.com/wintersummermint/generator-angular-one.git' },
+19 silly publish   scripts: { test: 'mocha' },
+19 silly publish   dependencies:
+19 silly publish    { underscore: '~1.5',
+19 silly publish      'underscore.string': '~2.3',
+19 silly publish      'yeoman-generator': '~0.16',
+19 silly publish      chalk: '~0.4.0',
+19 silly publish      'ng-parse-module': '~0.1.0' },
+19 silly publish   devDependencies: { mocha: '~1.10.0' },
+19 silly publish   engines: { node: '>=0.8.0' },
+19 silly publish   licenses: [ { type: 'MIT' } ],
+19 silly publish   readme: '\n# Generator Angular One\n\nYeoman angular scaffolding for large projects\n\n\nThis follows practice with [Best Practice angular-styleguide/johnpapa](https://github.com/johnpapa/angular-styleguide).\nQuickly bootstrap angular projects and dev environment with the help of angular One. This is still in working progress for additional features.\n\nGenerator \n- Builds skeleton (html,javascript, LESS, spec etc) for the component type.\n- Update index.html and add the necessary `script` tags.\n- Update app.less and add the @import as needed.\n- For partials, update the app.js, adding the necessary route call if a route was entered in the generator prompts.\n\n## Getting Started\n\nPackage manager (npm) need to be installed. You can get them from http://nodejs.org/.\n\n### Install Prerequisites: Node, Grunt, Yeoman, and Bower.  Once Node is installed, do:\n------------------------------------------------------------------------------------\n\n    npm install -g yo grunt-cli bower\n\n### Install this Generator using global -g:\n------------------------------------------------------------------------------------\n    npm install -g angular-one\n\n### Finally Create project:\n------------------------------------------------------------------------------------\n    mkdir myNewproject\n    cd myNewproject\n    yo angular-one\n\nNote: if EACCESS error , run bower and npm on sudo.\n\n## Run Application \n```\n\n    grunt serve \n    \n```\nif you encountered error when 3rd party is installed library use reinstall manually bower and npm or use grunt serve --force, \n\n## Directory Structure\n-----------------------------------------------------------------------------------\n    /app-main ......................... Main module\n      app-main-controller.js .......... app main js controller\n      /home ........................... home feature folder\n        home-controller.js ............ example simple controller\n        home-controller-test.js........ example simple controller unit test\n        \n        home-directive.js ............. complex directive javascript\n        home-directive.html ........... complex directive partial\n        home-directive.less ........... complex directive LESS\n        home-directive-test.js ........ complex directive unit test\n        /home-partial ................. example partial\n            home-partial.html ......... example partial html\n            home-partial.js ........... example partial controller\n            home-partial.less ......... example partial LESS\n            home-partial-test.js ...... example partial unit test\n    \t/search ....................... example search component folder\n      \t\tmy-filter.js .............. example filter\n      \t\tmy-filter-test.js ......... example filter unit test\n      \t/search-partial ............... example partial\n        \tsearch-partial.html ....... example partial html\n        \tsearch-partial.js ......... example partial controller\n        \tsearch-partial.less ....... example partial LESS\n        \tsearch-partial-test.js .... example partial unit test\n    \t/service ...................... angular services folder\n        \tmy-service.js ............. example service\n        \tmy-service-test.js ........ example service unit test\n        \tmy-service2.js ............ example service\n        \tmy-service2-test.js ....... example service unit test\n    /assets ........................... assets (not created by default but included in /dist if added : recommended) will update this in next release\n    /dist ............................. distributable version of app built using grunt and Gruntfile.js\n        /js ........................... js libraries (create this manually) \n        /img .......................... image assets (create this manually)\n    /bower_component................... 3rd party libraries managed by bower\n    /node_modules ..................... npm managed libraries used by grunt\n    app.less .......................... main app-less styles\n    app.js ............................ angular module initialization and route setup\n    index.html ........................ main HTML file\n    Gruntfile.js ...................... Grunt build file\n\n-----------------------------------------------------------------------------------\n\n## Running Generator:\n\ngenerators for controller, directive, partial, service, filter, module, and modal.\n\n```\n\tyo angular-one:controller controllerName\n\tyo angular-one:directive directiveName\n\tyo angular-one:partial partialName\n\tyo angular-one:service serviceName\n\tyo angular-one:filter filterName\n\tyo angular-one:module moduleName\n\tyo angular-one:modal modalName\n\n```\n\tName paramater passed will be used as the file names.  Each sub-generator will ask for the folder in which to create the new skeleton files.  You may override the default folder for each sub-generator in the `.yo-rc.json` file.\n\tModal subgenerator is a convenient shortcut to create partials that work as modals for Bootstrap v3.3.6 and Angular-UI-Bootstrap v0.10 (both come preconfigured with this generator).  If you choose not to use either of these libraries, simply don\'t use the modal subgenerator.\n\n## Submodules\n-------------\n\nUse the `yo angular-one:module my-module` specify a new subdirectory to place the module into.  Once you\'ve created a submodule, running other subgenerators will now prompt you to select the module in which to place the new component.\n\n## Libraries \n-------------\n\nIncludes Angular 1.3, Bootstrap 3, AngularUI Bootstrap, AngularUI Utils, FontAwesome 4, JQuery 2, Underscore 1.5, LESS 1.6, and Moment 2.5.  You may of course add to or remove any of these libraries.  But the work to integrate them into the app and into the build process has already been done for you.\n\n## Build Process\n-------------\n```\n\n    grunt test //karmajs testing\n    grunt build //dist folder\n    \n```\nThe project will include a ready-made Grunt build that will:\n\n* Build all the LESS files into one minified CSS file.\n* Uses [grunt-angular-templates](https://github.com/ericclemmons/grunt-angular-templates) to turn all your partials into Javascript.\n* Uses [grunt-ng-annotate](https://github.com/olov/ng-annotate) to preprocess all Angular injectable methods and make them minification safe.  Thus you don\'t have to use the array syntax.\n* Concatenates and minifies all Javascript into one file.\n* Replaces all appropriate script references in `index.html` with the minified CSS and JS files.\n* (Optionally) Minifies any images in `/img`.\n* Minifies the `index.html`.\n* adds assets to dist\n* Copies any extra files necessary for a distributable build (ex.  Font-Awesome font files, etc).\n\nThe resulting build loads only a few highly compressed files.\n\nThe build process uses [grunt-dom-munger](https://github.com/cgross/grunt-dom-munger) to pull script references from the `index.html`.  This means that **your index.html is the single source of truth about what makes up your app**.  Adding a new library, new controller, new directive, etc does not require that you update the build file.  Also the order of the scripts in your `index.html` will be maintained when they\'re concatenated.\n\nImportantly, grunt-dom-munger uses CSS attribute selectors to manage the parsing of the script and link tags.  Its very easy to exclude certain scripts or stylesheets from the concatenated files. This is often the case if you\'re using a CDN. This can also be used to prevent certain development scripts from being included in the final build.\n\n* To prevent a script or stylesheet from being included in concatenation, put a `data-concat="false"` attribute on the link or script tag.  This is currently applied for the `livereload.js` and `less.js` script tags.\n\n* To prevent a script or link tag from being removed from the finalized `index.html`, use a `data-remove="false"` attribute.\n',
+19 silly publish   readmeFilename: 'README.md',
+19 silly publish   gitHead: 'a748cca4933d3cbb282379081ef167a051b9ba0b',
+19 silly publish   _id: 'generator-angular-one@1.4.1',
+19 silly publish   _shasum: 'c155f25f52aa9e7348c3d1e978f502735c662059',
+19 silly publish   _from: '.' }
+20 verbose getPublishConfig undefined
+21 silly mapToRegistry name generator-angular-one
+22 silly mapToRegistry using default registry
+23 silly mapToRegistry registry https://registry.npmjs.org/
+24 silly mapToRegistry uri https://registry.npmjs.org/generator-angular-one
+25 verbose publish registryBase https://registry.npmjs.org/
+26 silly publish uploading /home/cypher/.npm/generator-angular-one/1.4.1/package.tgz
+27 verbose request uri https://registry.npmjs.org/generator-angular-one
+28 verbose request sending authorization for write operation
+29 info attempt registry request try #1 at 1:10:15 PM
+30 verbose request using bearer token for auth
+31 verbose request id 6666440b6bcc2b53
+32 http request PUT https://registry.npmjs.org/generator-angular-one
+33 http 403 https://registry.npmjs.org/generator-angular-one
+34 verbose headers { 'content-type': 'application/json',
+34 verbose headers   'cache-control': 'max-age=300',
+34 verbose headers   'content-length': '95',
+34 verbose headers   'accept-ranges': 'bytes',
+34 verbose headers   date: 'Mon, 25 Jan 2016 05:10:16 GMT',
+34 verbose headers   via: '1.1 varnish',
+34 verbose headers   connection: 'keep-alive',
+34 verbose headers   'x-served-by': 'cache-sin6923-SIN',
+34 verbose headers   'x-cache': 'MISS',
+34 verbose headers   'x-cache-hits': '0',
+34 verbose headers   'x-timer': 'S1453698615.890836,VS0,VE880' }
+35 verbose request invalidating /home/cypher/.npm/registry.npmjs.org/generator-angular-one on PUT
+36 error publish Failed PUT 403
+37 verbose stack Error: "You cannot publish over the previously published version 1.4.1." : generator-angular-one
+37 verbose stack     at makeError (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+37 verbose stack     at CachingRegistryClient.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+37 verbose stack     at Request._callback (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+37 verbose stack     at Request.self.callback (/usr/lib/node_modules/npm/node_modules/request/request.js:198:22)
+37 verbose stack     at Request.emit (events.js:110:17)
+37 verbose stack     at Request.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:1035:10)
+37 verbose stack     at Request.emit (events.js:129:20)
+37 verbose stack     at IncomingMessage.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:962:12)
+37 verbose stack     at IncomingMessage.emit (events.js:129:20)
+37 verbose stack     at _stream_readable.js:908:16
+38 verbose statusCode 403
+39 verbose pkgid generator-angular-one
+40 verbose cwd /home/cypher/Videos/generator-angular-one
+41 error Linux 3.19.0-39-generic
+42 error argv "node" "/usr/bin/npm" "publish"
+43 error node v0.12.9
+44 error npm  v3.5.3
+45 error code E403
+46 error "You cannot publish over the previously published version 1.4.1." : generator-angular-one
+47 error If you need help, you may report this error at:
+47 error     <https://github.com/npm/npm/issues>
+48 verbose exit [ 1, true ]
