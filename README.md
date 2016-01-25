@@ -32,6 +32,8 @@ Package manager (npm) need to be installed. You can get them from http://nodejs.
     cd myNewproject
     yo angular-one
 
+Note: if EACCESS error , run bower and npm on sudo.
+
 ## Run Application 
 ```
 
