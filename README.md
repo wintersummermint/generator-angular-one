@@ -24,7 +24,7 @@ Package manager (npm) need to be installed. You can get them from http://nodejs.
 
 ### Install this Generator using global -g:
 ------------------------------------------------------------------------------------
-    npm install -g angular-one
+    npm install -g generator-angular-one
 
 ### Finally Create project:
 ------------------------------------------------------------------------------------
