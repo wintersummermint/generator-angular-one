@@ -8,7 +8,7 @@ This follows practice with [Best Practice angular-styleguide/johnpapa](https://g
 Quickly bootstrap angular projects and dev environment with the help of angular One. This is still in working progress for additional features.
 
 Generator 
-- Bootstrap skeleton files (javascript, LESS, html, spec etc) for the component type.
+- Builds skeleton (html,javascript, LESS, spec etc) for the component type.
 - Update index.html and add the necessary `script` tags.
 - Update app.less and add the @import as needed.
 - For partials, update the app.js, adding the necessary route call if a route was entered in the generator prompts.
@@ -97,7 +97,6 @@ generators for controller, directive, partial, service, filter, module, and moda
 	yo angular-one:modal modalName
 
 ```
-Note : 
 	Name paramater passed will be used as the file names.  Each sub-generator will ask for the folder in which to create the new skeleton files.  You may override the default folder for each sub-generator in the `.yo-rc.json` file.
 	Modal subgenerator is a convenient shortcut to create partials that work as modals for Bootstrap v3.1 and Angular-UI-Bootstrap v0.10 (both come preconfigured with this generator).  If you choose not to use either of these libraries, simply don't use the modal subgenerator.
 
