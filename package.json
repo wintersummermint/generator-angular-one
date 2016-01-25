@@ -1,13 +1,13 @@
 {
   "name": "generator-angular-one",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Angular base scaffolding for large projects",
   "keywords": [
     "yeoman-generator",
     "angular"
   ],
-  "homepage": "https://github.com/wintersummermint/angular-one.git",
-  "bugs": "https://github.com/wintersummermint/angular-one/issues",
+  "homepage": "https://github.com/wintersummermint/generator-angular-one.git",
+  "bugs": "https://github.com/wintersummermint/generator-angular-one/issues",
   "author": {
     "name": "Nixon Galario",
     "email": "nixongalaio@gmail.com",
@@ -16,7 +16,7 @@
   "main": "app/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wintersummermint/angular-one.git"
+    "url": "https://github.com/wintersummermint/generator-angular-one.git"
   },
   "scripts": {
     "test": "mocha"
