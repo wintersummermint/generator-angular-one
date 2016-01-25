@@ -100,7 +100,7 @@ generators for controller, directive, partial, service, filter, module, and moda
 
 ```
 	Name paramater passed will be used as the file names.  Each sub-generator will ask for the folder in which to create the new skeleton files.  You may override the default folder for each sub-generator in the `.yo-rc.json` file.
-	Modal subgenerator is a convenient shortcut to create partials that work as modals for Bootstrap v3.1 and Angular-UI-Bootstrap v0.10 (both come preconfigured with this generator).  If you choose not to use either of these libraries, simply don't use the modal subgenerator.
+	Modal subgenerator is a convenient shortcut to create partials that work as modals for Bootstrap v3.3.6 and Angular-UI-Bootstrap v0.10 (both come preconfigured with this generator).  If you choose not to use either of these libraries, simply don't use the modal subgenerator.
 
 ## Submodules
 -------------
