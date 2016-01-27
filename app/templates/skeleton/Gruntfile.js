@@ -93,7 +93,7 @@ module.exports = function (grunt) {
     copy: {
       main: {
         files: [
-          {src: ['assets/**'], dest: 'dist/assets'},
+          {expand: true, src: ['assets/**'], dest: 'dist/'},
           {src: ['bower_components/font-awesome/fonts/**'], dest: 'dist/',filter:'isFile',expand:true},
           {src: ['bower_components/bootstrap/fonts/**'], dest: 'dist/',filter:'isFile',expand:true}
           //{src: ['bower_components/angular-ui-utils/ui-utils-ieshiv.min.js'], dest: 'dist/'},
