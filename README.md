@@ -3,7 +3,7 @@
 
 Yeoman angular scaffolding for large projects
 
-
+(will be building generator for angular 2.0 soon)
 This follows practice with [Best Practice angular-styleguide/johnpapa](https://github.com/johnpapa/angular-styleguide).
 Quickly bootstrap angular projects and dev environment with the help of angular One. This is still in working progress for additional features.
 
