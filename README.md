@@ -42,48 +42,6 @@ Note: if EACCESS error , run bower and npm on sudo.
 ```
 if you encountered error when 3rd party is installed library use reinstall manually bower and npm or use grunt serve --force, 
 
-## Directory Structure
------------------------------------------------------------------------------------
-    /app-main ......................... Main module
-      app-main-controller.js .......... app main js controller
-      /home ........................... home feature folder
-        home-controller.js ............ example simple controller
-        home-controller-test.js........ example simple controller unit test
-        
-        home-directive.js ............. complex directive javascript
-        home-directive.html ........... complex directive partial
-        home-directive.less ........... complex directive LESS
-        home-directive-test.js ........ complex directive unit test
-        /home-partial ................. example partial
-            home-partial.html ......... example partial html
-            home-partial.js ........... example partial controller
-            home-partial.less ......... example partial LESS
-            home-partial-test.js ...... example partial unit test
-    	/search ....................... example search component folder
-      		my-filter.js .............. example filter
-      		my-filter-test.js ......... example filter unit test
-      	/search-partial ............... example partial
-        	search-partial.html ....... example partial html
-        	search-partial.js ......... example partial controller
-        	search-partial.less ....... example partial LESS
-        	search-partial-test.js .... example partial unit test
-    	/service ...................... angular services folder
-        	my-service.js ............. example service
-        	my-service-test.js ........ example service unit test
-        	my-service2.js ............ example service
-        	my-service2-test.js ....... example service unit test
-    /assets ............................... assets 
-        /js ............................... js libraries 
-        /img .............................. image assets
-    /dist ................................. distributable version of app built using grunt and Gruntfile.js
-    /bower_component....................... 3rd party libraries managed by bower
-    /node_modules ......................... npm managed libraries used by grunt
-    app.less .............................. main app-less styles
-    app.js ................................ angular module initialization and route setup
-    index.html ............................ main HTML file
-    Gruntfile.js .......................... Grunt build file
-
------------------------------------------------------------------------------------
 
 ## Running Generator:
 
